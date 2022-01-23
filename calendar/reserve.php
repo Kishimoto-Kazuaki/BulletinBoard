@@ -158,7 +158,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             <!-- 集会所の説明文 -->
             <br>
             <div class="border border-info">
-                予約前に確認！
+                <p class="text-danger d-flex justify-content-center">予約前に確認！</p>
                 <ul>
                     <li>滝本地区住民なら誰でも使用できます（官舎住民以外も使用します）。</li>
                     <li>滝本官舎自治会長が管理しています。</li>
