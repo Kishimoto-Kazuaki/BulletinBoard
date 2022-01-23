@@ -1,0 +1,43 @@
+// リンク
+a {
+    text-decoration: none;
+    color: black;
+    
+    .link{
+        // 新規登録、ログイン、お知らせ一覧、規約画面で使用
+        color: blue;
+    }
+}
+
+// エラーメッセージ
+.error{
+    color: red;
+}
+
+// カレンダー
+.calendar
+{
+    font-family: 'Noto Sans JP', sans-serif;
+
+    th {
+        height: 30px;
+        text-align: center;
+    }
+
+    td {
+        height: 100px;
+    }
+
+    .today {
+        background: orange !important;
+    }
+
+    th:nth-of-type(1),td:nth-of-type(1){
+        color:red;
+    }
+    
+    th:nth-of-type(7),td:nth-of-type(7){
+        color: blue;
+    }
+}
+
