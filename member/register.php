@@ -118,7 +118,7 @@ if(empty(array_filter($error)) && $cnt === 0 && strlen($password) >= 4){
                     <!-- パスワードのバリデーション -->
                     <?php if($error['password'] === 'blank'): ?>
                         <p class="error">パスワードを入力してください。</p>
-                    <?php elseif(isset($password) && strlen($password) <= 3): ?>
+                    <?php elseif($password !== '' && strlen($password) <= 3): ?>
                         <p class="error">パスワードは4文字以上で入力してください。</p>
                     <?php endif; ?>
                 </div>
