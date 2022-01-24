@@ -7,7 +7,8 @@ require '../common.php';
 
 //ログインされているかを確認
 if(isset($_SESSION['id']) && isset($_SESSION['name'])){
-    //セッションで渡された変数を$nameに格納
+    //セッションで渡された変数を$id,$nameに格納
+    $id = $_SESSION['id'];
     $name = $_SESSION['name'];
     } else if(isset($_SESSION['adm_id']) && isset($_SESSION['adm_name'])){
         $adm_id = $_SESSION['adm_id'];
