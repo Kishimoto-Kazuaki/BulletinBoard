@@ -129,7 +129,7 @@ for($day = 1; $day <= $day_count; $day++, $youbi++){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>カレンダー</title>
     <!-- BootstrapのCSS読み込み -->
-    <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- 共通のcssファイルを読み込み -->
     <link href="../style.css" rel="stylesheet">
     <!-- Google Fontsから使用するフォントを取得 -->

@@ -50,7 +50,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     <title>削除確認</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
