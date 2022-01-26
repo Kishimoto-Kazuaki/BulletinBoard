@@ -1,6 +1,10 @@
 <?php
 session_start();
-$name = $_SESSION['name'];
+// 管理者で入った場合セッションにnameは存在していないための処置
+if(isset($_SESSION['name'])){
+    $name = $_SESSION['name'];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
