@@ -44,7 +44,7 @@ $stmt->bind_result($notice_id, $user_id, $title, $contents, $file, $created);
 <body>
     <!-- ヘッダー部分 -->
     <nav class="navbar navbar-light d-flex justify-content-between" style="background-color: #e3f2fd;">
-            <h1>&nbsp;<a href="index.php">官舎掲示板トップページ</a></h1>
+            <h1>&nbsp;<a href="index.php">掲示板トップページ</a></h1>
             <div class="d-flex align-items-end">
                 <p class="menu-item">ようこそ
                     <?php if(isset($name)){echo $name;} else if(isset($adm_name)){echo $adm_name;} ?>

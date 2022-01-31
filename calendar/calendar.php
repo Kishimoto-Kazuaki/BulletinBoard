@@ -164,7 +164,7 @@ for($day = 1; $day <= $day_count; $day++, $youbi++){
         </nav>
         <!-- カレンダー -->
         <div class="col-9 mt-3 container calendar">
-            <h3 class="mb-1 text-center"><a href="?ym=<?php echo $prev; ?>">&lt;</a>&nbsp;<?php echo $html_title; ?>&nbsp;<a href="?ym=<?php echo $next; ?>">&gt;</a></h3>
+            <h3 class="mb-1 text-center"><a href="?ym=<?php echo $prev; ?>" class="text-primary">&lt;</a>&nbsp;<?php echo $html_title; ?>&nbsp;<a href="?ym=<?php echo $next; ?>" class="text-primary">&gt;</a></h3>
             <table class="table table-bordered">
                 <tr>
                     <th style="width: 14.29%;">日</th>
