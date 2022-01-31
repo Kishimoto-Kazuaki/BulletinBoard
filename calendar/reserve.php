@@ -129,8 +129,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
            <form action="" method="post"　class="form-group">
                 <div>
                     <label for="reserver_name">予約者名</label>
-                    <input type="text" name="reserver_name" id="reserver_name" class="form-control" value="<?php if(isset($reserver_name)) { echo h($reserver_name);} ?>">
-                    <?php echo $name; if(isset($error['reserver_name']) && $error['reserver_name'] === 'blank'): ?>
+                    <input type="text" name="reserver_name" id="reserver_name" class="form-control" value="<?php echo $name; if(isset($reserver_name)) { echo h($reserver_name);} ?>">
+                    <?php if(isset($error['reserver_name']) && $error['reserver_name'] === 'blank'): ?>
                         <p class="error">予約者名を入力してください。</p>
                     <?php endif; ?>
                 </div>
