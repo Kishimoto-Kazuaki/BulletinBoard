@@ -104,7 +104,10 @@ if(empty(array_filter($error)) && $cnt === 0 && strlen($password) >= 4){
                     
                     <!-- ユーザー名のバリデーション -->
                     <?php if($error['name'] === 'blank'): ?>
-                        <span class="error">ユーザー名を入力してください。</span>
+                        <span class="error">ユーザー名を入力してください（20文字以内）。</span>
+                    <!-- ユーザー名が20文字以内かを確認 -->
+                    <?php elseif(mb_strlen($name) > 20): ?>
+                        <span class="error">ユーザー名は20文字以内にしてください。</span>  
                     <!-- メールアドレスが重複していないかを確認 -->
                         <?php elseif($cnt > 0): ?>
                         <span class="error">そのユーザー名は既に使われています。別のユーザー名を入力してください。</span>
