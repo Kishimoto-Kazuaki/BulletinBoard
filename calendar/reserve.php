@@ -108,7 +108,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <p class="menu-item">ようこそ
                     <?php if(isset($name)){echo $name;} else if(isset($adm_name)){echo $adm_name;} ?>
                     さん&nbsp;|&nbsp;</p>
-                <p class="menu-item"><a class="text-primary" href="member/logout.php">ログアウト</a></p>
+                <p class="menu-item"><a class="text-primary" href="../member/logout.php">ログアウト</a></p>
             </div>
     </nav>
 
