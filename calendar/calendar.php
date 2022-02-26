@@ -160,6 +160,7 @@ for($day = 1; $day <= $day_count; $day++, $youbi++){
                 <a class="btn btn-info btn-lg m-3" style="width: 80%;" href="../committee_member.php">役員一覧</a>
                 <a class="btn btn-info btn-lg m-3" style="width: 80%;" href="../terms/terms.php">規約</a>
                 <a class="btn btn-info btn-lg m-3" style="width: 80%;" href="../opinion/opinion.php">改善意見</a>
+                <a class="btn btn-warning btn-lg m-3" style="width: 80%;" href="../attendance.php">総会の出欠</a>
                 <a class="btn btn-info btn-lg m-3" style="width: 80%;" href="../member/withdrawal.php">退会</a>
         </nav>
         <!-- カレンダー -->
