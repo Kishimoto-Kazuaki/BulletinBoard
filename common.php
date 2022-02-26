@@ -1,7 +1,7 @@
 <?php
 // bulletin_boardデータベースに接続
 function db_conect(){
-    $db = new mysqli('localhost:8889','root','root','bulletin_board');
+    $db = new mysqli('mysql81.conoha.ne.jp','16xl8_kkazu533','************','16xl8_portfolio');
     //エラーチェック
     if(!$db){
         die($db->error);

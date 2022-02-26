@@ -96,6 +96,19 @@ while ($stmt4->fetch()) {
     array_push($opinion, $opinion_contents);
 }
 
+// 現在の参加人数を取得
+$stmt5 = $db->prepare('select count(*) from attendance where absence = "attend"');
+if(!$stmt5){
+    die($db->error);
+}
+$success = $stmt5->execute();
+if(!$success){
+    die($db->error);
+}
+$stmt5->bind_result($people_counts);
+while ($stmt5->fetch()) {
+    array_push($people, $people_counts);
+}
 ?>
 
 <!DOCTYPE html>
@@ -183,6 +196,16 @@ while ($stmt4->fetch()) {
                 <?php for ($i=0; $i < count($opinion); $i++): ?>
                     <p><b>内容</b>：<?php echo h($opinion[$i]); ?></p>
                 <?php endfor; ?>
+            </div>
+            <br>
+            <div class="border border-dark border-2 overflow-scroll">
+            現在の総会参加人数：
+                <?php 
+                    for ($i=0; $i < count($people); $i++){
+                        echo h($people[$i]);
+                    }
+                ?>
+            </span>
             </div>
         </div>
     </div>
