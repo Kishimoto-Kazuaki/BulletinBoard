@@ -183,11 +183,11 @@ function confirm_test() {
                 if($error === "double"){
                     $alert = "<script type='text/javascript'>alert('既に登録されています。');</script>";
                     echo $alert;
-                    $eeror = "";
-                } else {
+                    $error = "";
+                } elseif($error === "null") {
                     $alert = "<script type='text/javascript'>alert('登録しました。');</script>";
                     echo $alert;
-                    $eeror = "";
+                    $error = "";
                 } 
                 ?>
             </form>

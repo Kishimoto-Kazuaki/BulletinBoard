@@ -31,6 +31,7 @@ $reserve = [
     'date' => [],
 ];
 $opinion = [];
+$people = [];
 
 // 現在の登録者の数と名前を取得
 $db = db_conect();
